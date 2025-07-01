@@ -1,3 +1,3 @@
-Mira K
-42 years old
-I am from Kazakhstan
+# Mira K
+# 42 years old
+# I am from Kazakhstan
