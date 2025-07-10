@@ -1,8 +1,29 @@
+body {
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    background-color: #413f3f;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0; padding: 0;
+}
+
+.header {
+    border: 1px solid red;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .nav-link {
@@ -10,9 +31,19 @@
   line-height: 50px;
   transition: 0.3s;
   cursor: pointer;
-  text-decoration: none; 
+  text-decoration: none;
+  color: #f0f0f0; 
+}
+
+.nav-item {
+  background-color: #282727;
+  border: 1px solid #141114;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif; 
 }
 
 .nav-item:hover {
-  background-color: #f0f0f0;
+  background-color: #0c0c0c;
 }
