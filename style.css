@@ -1,15 +1,50 @@
 body {
     display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-    background-color: #413f3f;
-    font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #111;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ded6d6;    min-height: 100vh;
     margin: 0; padding: 0;
 }
 
-.header {
-    border: 1px solid red;
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #6f6d6d; 
+}
+
+.nav-item {
+  background-color: #282727;
+  border: 1px solid #141114;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Nunito", sans-serif;; 
+}
+
+.nav-item:hover {
+  background-color: #b6b2b2;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -22,47 +57,87 @@ body {
   flex-wrap: wrap;
 }
 
-.section {
-  width: 50%;
-}
-
-.nav-list {
+#about, #education, #skills {
+  /* width: 50%; */
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-  font-weight: bold;
-  font-size: 15px;
+  flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: #373434;
+    padding: 20px;
+    margin: 20px;
+    opacity: 0.5;
 }
 
-.nav-link {
-  padding: 0 20px;
-  line-height: 50px;
-  transition: 0.3s;
-  cursor: pointer;
-  text-decoration: none;
-  color: #f0f0f0; 
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.nav-item {
-  background-color: #282727;
-  border: 1px solid #141114;
-  margin: 5px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: 'Roboto', sans-serif; 
+.surname {
+    margin-bottom: 0;
 }
 
-.nav-item:hover {
-  background-color: #0c0c0c;
-}
-
-html {
-  scroll-behavior: smooth;
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #737373;
 }
 
 
+h3 {
+    color: #737373;
+}
 
+h2 {
+   padding: 20px;
+   color: #aaa8a8;
+}
+
+.about-item {
+  list-style-type: none;
+}
+
+.skills-item {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.logo-item-1 {
+  list-style-type: none;
+  list-style-image: url('/rsschool-cv/assets/html-logo-item.png');
+}
+
+.logo-item-2 {
+  list-style-type: none;
+  list-style-image: url('/rsschool-cv/assets/css-logo-item.png');
+}
+
+.logo-item-3 {
+  list-style-type: none;
+  list-style-image: url('/rsschool-cv/assets/JavaScript-logo-item.png');
+}
+
+.logo-item-4 {
+  list-style-type: none;
+  list-style-image: url('/rsschool-cv/assets/github-logo-item.png');
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #373434;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (max-width: 768px) {
   .section {
