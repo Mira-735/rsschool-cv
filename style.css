@@ -64,7 +64,7 @@ html {
   flex-wrap: wrap;
 }
 
-#about, #education, #skills {
+#about, #education, #skills, #projects {
   /* width: 50%; */
   display: flex;
   flex-direction: column;
@@ -193,12 +193,20 @@ html {
   padding: 5px;
 }
 
+.projects-link {
+  list-style-type: none;
+  list-style-type: square;
+  text-decoration: none;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #efe9e9;
+}
+
 footer {
   margin: 0;
   padding: 0;
   background-color: #373434;
   border: 1px solid #535603;
-
 }
 
 .footer {
