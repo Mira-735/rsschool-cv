@@ -1,0 +1,333 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #8e9160;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ded6d6;    
+  min-height: 100vh;
+  margin: 0; 
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #6f6d6d; 
+}
+
+.nav-item {
+  background-color: #282727;
+  border: 1px solid #141114;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Nunito", sans-serif;; 
+}
+
+.nav-item:hover {
+  background-color: #b6b2b2;
+  /* transform: translateY(-5px); */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  width: 50%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about, #education, #languages, #skills, #projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #373434;
+  padding: 20px;
+  margin: 20px;
+  opacity: 0.5;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.surname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b49706;  
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: #b49706;
+}
+
+.title {
+  width: 15%;
+  padding: 10px 20px;
+  color: #d1af04;
+}
+
+.about-item, .contact-text {
+  list-style-type: none;
+}
+
+.about-item {
+  margin-bottom: 10px;
+}
+
+.languages-list {
+  list-style-type: square;
+  cursor: pointer;
+  color: #efe9e9;
+}
+
+.skills-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo-item {
+  display: flex;
+  align-self: center;
+  width: 3%;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;  
+  width: 10%;
+}
+
+.percent-html {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 70%;
+  border: 1px solid #00050b;
+  background-color: #236ecb;
+  margin: 5px 0;
+}
+
+.percent-html::before {
+  content: "70%";
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.percent-css {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 60%;
+  border: 1px solid #00050b;
+  background-color: #236ecb;
+  margin: 5px 0;
+}
+
+.percent-css::before {
+  content: "60%";
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.percent-javascript {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 20%;
+  border: 1px solid #00050b;
+  background-color: #236ecb;
+  margin: 5px 0;
+}
+
+.percent-javascript::before {
+  content: "20%";
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.percent-github {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #00050b;
+  background-color: #236ecb;
+  margin: 5px 0;
+}
+
+.percent-github::before {
+  content: "30%";
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.projects-link {
+  color: #efe9e9;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.projects-list {
+  list-style-type: square;
+}
+
+.languages-item, .projects-item {
+  padding: 0 10px;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  background-color: #373434;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 40px;
+}
+
+ .contact-text {
+    color: rgb(7, 7, 7);
+ }
+
+@media (max-width: 992px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .section-title {
+    align-items: center;
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    padding: 10px;
+    color: #d1af04;
+  }
+ 
+  .copyright {
+    order: 4;
+  }
+
+  .not-my-photo {
+    width: 200px;
+    height: 240px;
+  }
+
+  .percent-html {
+    width: 50%;
+  }
+
+  .percent-css {
+    width: 40%;
+  }
+
+  .percent-javascript {
+    width: 15%;
+  }
+
+  .percent-github {
+  width: 20%;
+  }
+
+  .logo-item {
+  margin: 5px 20px;
+  }
+
+  .logo-text {
+    margin: 0px 20px 0 0;
+    width: 20%;
+  }
+
+  #about, #education, #skills, #projects, #languages {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .logo-item {
+   margin: 5px 20px;
+  }
+
+  .logo-text {
+    margin: 0px 20px 0 0;
+    width: 20%;
+  }
+
+  .footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (orientation: portrait) {
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
